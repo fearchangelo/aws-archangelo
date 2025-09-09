@@ -5,7 +5,7 @@ terraform {
   backend "s3" {
     bucket         = "aws-archangelo-terraform"
     key            = "terraform-state"
-    region         = "us-east-2"
+    region         = "us-west-2"
     encrypt        = true
     kms_key_id     = "alias/aws/s3"
     dynamodb_table = "terraform-state-lock"
