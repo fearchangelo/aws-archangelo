@@ -177,7 +177,7 @@ resource "aws_bedrockagent_agent_action_group" "time_actions" {
   agent_version      = "DRAFT"
   action_group_name  = "TimeActions"
   description        = "Action group for date/time operations"
-  action_group_state = "ENABLED"
+  action_group_state = "DISABLED"
 
   action_group_executor {
     lambda = aws_lambda_function.datetime_function.arn
